@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Divider, Badge, Image, Text, Card, Button, Group } from "@mantine/core";
+import { Divider, Badge, Image, Text, Card, Button, Group, Skeleton } from "@mantine/core";
 import liff from "@line/liff";
 
 
@@ -56,6 +56,9 @@ export default function Profile() {
           </Card>
         </div>
       }
+      {!profile && (
+        <Skeleton height={400} mt={6} radius="md" />
+      )}
       {error && (
         <p>
           <code>{error}</code>
