@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Divider, Badge, Image, Text } from "@mantine/core";
+import { Divider, Badge, Image, Text, Card, Button, Group } from "@mantine/core";
 import liff from "@line/liff";
 
 
@@ -36,12 +36,24 @@ export default function Profile() {
     <>
       {profile &&
         <div>
-          <p>{profile.displayName}</p>
-          <Badge color="blue">{profile.statusMessage}</Badge>
-          <Image
-            radius="md"
-            src={profile.pictureUrl}
-          />
+          <Card shadow="sm" padding="lg" radius="md" withBorder>
+            <Card.Section>
+              <Image
+                src={profile.pictureUrl}
+                height={300}
+                alt={profile.displayName}
+              />
+            </Card.Section>
+
+            <Group justify="space-between" mt="md" mb="xs">
+              <Text fw={500}>{profile.displayName}</Text>
+              <Badge color="green">Online</Badge>
+            </Group>
+
+            <Text size="sm" c="dimmed">
+              {profile.statusMessage}
+            </Text>
+          </Card>
         </div>
       }
       {error && (
