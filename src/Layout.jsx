@@ -28,6 +28,7 @@ function Layout() {
             <IconShoppingCart stroke={1.5} color="var(--mantine-color-blue-filled)" style={{ width: rem(30), height: rem(30) }} />
             <Group ml="xl" gap={0} visibleFrom="sm">
               <NavLink
+                replace
                 to="/dashboard"
                 className={classes.control}
                 style={({ isActive, isPending, isTransitioning }) => {
@@ -41,6 +42,7 @@ function Layout() {
                 <UnstyledButton>แดชบอร์ด</UnstyledButton>
               </NavLink>
               <NavLink
+                replace
                 to="/profile"
                 className={classes.control}
                 style={({ isActive, isPending, isTransitioning }) => {
@@ -61,6 +63,7 @@ function Layout() {
       <AppShell.Navbar py="md" px={4}>
         <NavLink
           to="/dashboard"
+          replace
           className={classes.control}
           onClick={toggle}
           style={({ isActive, isPending, isTransitioning }) => {
@@ -75,6 +78,7 @@ function Layout() {
         </NavLink>
         <NavLink
           to="/profile"
+          replace
           className={classes.control}
           onClick={toggle}
           style={({ isActive, isPending, isTransitioning }) => {
