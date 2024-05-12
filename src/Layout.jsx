@@ -38,7 +38,7 @@ function Layout() {
                   };
                 }}
               >
-                <UnstyledButton>Dashboard</UnstyledButton>
+                <UnstyledButton>แดชบอร์ด</UnstyledButton>
               </NavLink>
               <NavLink
                 to="/profile"
@@ -51,7 +51,7 @@ function Layout() {
                   };
                 }}
               >
-                <UnstyledButton>Profile</UnstyledButton>
+                <UnstyledButton>โปรไฟล์</UnstyledButton>
               </NavLink>
             </Group>
           </Group>
@@ -71,7 +71,7 @@ function Layout() {
             };
           }}
         >
-          <UnstyledButton>Dashboard</UnstyledButton>
+          <UnstyledButton>แดชบอร์ด</UnstyledButton>
         </NavLink>
         <NavLink
           to="/profile"
@@ -85,7 +85,7 @@ function Layout() {
             };
           }}
         >
-          <UnstyledButton>Profile</UnstyledButton>
+          <UnstyledButton>โปรไฟล์</UnstyledButton>
         </NavLink>
       </AppShell.Navbar>
 

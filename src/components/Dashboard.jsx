@@ -17,7 +17,6 @@ export default function Dashboard() {
       const response = await axios.get(
         "https://6586ab08468ef171392e8a15.mockapi.io/api/v1/blogs"
       );
-      console.log(response.data);
       setBlogs(response.data);
       setIsLoading(false);
     } catch (error) {
@@ -31,8 +30,9 @@ export default function Dashboard() {
 
   return (
     <>
+      <h1>แดชบอร์ด</h1>
       {isLoading ? (
-        <Center h={'100dvh'}>
+        <Center h={'80dvh'}>
           <Loader color="blue" />
         </Center>
       ) : (

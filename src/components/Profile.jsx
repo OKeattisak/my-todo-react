@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Divider, Badge, Image, Text, Card, Button, Group, Skeleton } from "@mantine/core";
+import { Divider, Badge, Image, Text, Card, Button, Group, Skeleton, Title } from "@mantine/core";
 import liff from "@line/liff";
 
 
@@ -34,6 +34,7 @@ export default function Profile() {
 
   return (
     <>
+      <h1>โปรไฟล์</h1>
       {profile &&
         <div>
           <Card shadow="sm" padding="lg" radius="md" withBorder>
